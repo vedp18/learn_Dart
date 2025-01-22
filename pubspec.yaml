@@ -1,0 +1,9 @@
+name: dart_practice # Replace with your project's name
+description: Dart Practice
+version: 1.0.0
+
+environment:
+  sdk: '>=3.6.0 <4.0.0' # Add this line for SDK constraint
+
+dependencies:
+  http: ^1.2.2 # Ensure this is included
