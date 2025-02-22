@@ -35,37 +35,45 @@ void main(List<String> args) {
 
   print("--------------------------------------------------------------");
 
+  // calling function with nullable return type
   print(func());
 
   print("--------------------------------------------------------------");
 
-  func2("Rock Lee", 14, "Persiverance");
+  // calling function with positional arguements
+  func2("Rock Lee", 14, "Persiverance");    
 
   print("--------------------------------------------------------------");
 
+  // caling function with named arguements
   func3(faltu: "Red Beast", age: 27, name: "Might Guy");
 
   print("--------------------------------------------------------------");
 
+  // calling function with optional arguements
   func4(name: "Jiraiya");
 
   print("--------------------------------------------------------------");
 
+  // here returnFunction returns an anonymous Function and after that (); execute it 
   returnFunction()();
+
+  // here in below example is also doing same (){} --> defining function and (); executing it
   // another anonymous function
   (){
     print("another anonymous function");
   }();
-  ();
+
+  ();   // this does nothing like run empty funtion according to me ( this was my experiment and doesn't gave error with FLutter 3.27.1 )
 
   print("--------------------------------------------------------------");
 
+
+  // calling arrow function (which are define using =>)
   print(func5());
   func6();
 
   print("--------------------------------------------------------------");
-
-
 
 }
 
@@ -101,17 +109,18 @@ Member - 3: Sasuke Uchiha
 */
 
 
-/// function with nullable return type using <datatype>? which means it can be nullable
+/// function with nullable return type using <datatype>? which means it can return null
 String? func(){
   return null;
 }
 
-/// function with positional arguements 
+/// function with positional arguements (whenever this kind of function is called then all arguements should be passed with same position as function defination has)
 void func2(String name, int age, String faltu){
   print(name);
 }
 
-/// function with named arguements
+/// function with named arguements    (while calling this kind of function, arguements can be misplaced)
+// required keyword makes that parameter mandatory 
 void func3({required String name, required int age,  required String faltu}){
   print(name);
 }

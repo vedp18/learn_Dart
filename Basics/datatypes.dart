@@ -21,24 +21,25 @@ void main(List<String> args) {
   
 
   int int_var = 10;
-  print("BELOW: $int_var");
+  print("BEFORE: $int_var");  // Output: BEFORE: 10
   int_var = 30;
-  print("AFTER: $int_var");
+  print("AFTER: $int_var");   // Output: AFTER: 30
 
   double double_var = 1.90099;
-  print("BELOW: $double_var");
+  print("BEFORE: $double_var");   // Output: BEFORE: 1.90099
   double_var = 9.898989;
-  print("AFTER: $double_var");
+  print("AFTER: $double_var");    // Output: AFTER: 9.898989
+
 
   String string_var = 'heelolo';
-  print("BELOW:" + string_var);   // String can be concanted using '+' operator // This is not commonly used 
+  print("BEFORE:" + string_var);   // Output: BEFORE: heelolo // String can be concanted using '+' operator // This is not commonly used 
   string_var = 'new string';
-  print("AFTER:" + string_var);
+  print("AFTER:" + string_var);   // Output: AFTER: new string
 
   bool bool_var = true;
-  print("BELOW: $bool_var");
+  print("BEFORE: $bool_var");   // Output: BEFORE: true
   bool_var = false;
-  print("AFTER: $bool_var");
+  print("AFTER: $bool_var");    // Output: AFTER: false
 
 
   // Special types or keywords
@@ -47,30 +48,30 @@ void main(List<String> args) {
   var var_var = 2323;
   dynamic dynamic_var = 762;
 
-  print("BELOW: $final_var");
-  print("BELOW: $const_var");
-  print("BELOW: $var_var");
-  print("BELOW: $dynamic_var");
+  print("BEFORE: $final_var");
+  print("BEFORE: $const_var");
+  print("BEFORE: $var_var");
+  print("BEFORE: $dynamic_var");
 
 
-  // final_var = 234;    // can only be set once and also type cannot be change 
+  // final_var = "UHUH";    // can only be set once and also type cannot be change 
   // const_var = 'jkll';     // can't be reassigned value
 
   var_var = 454;      // possible to change value of that type
   // var_var = 'type_changing';    // cannot change type but can be change value of that type
-  print("AFTER: $var_var");
+  print("AFTER: $var_var");   // Output: AFTER: 454
 
   dynamic_var = 989;    // possible to change value
-  print("AFTER: $dynamic_var");
+  print("AFTER: $dynamic_var");   // Output: AFTER: 989
 
   dynamic_var = 'type change to string';    // possible to change type also 
-  print("AFTER: $dynamic_var");
+  print("AFTER: $dynamic_var");   // Output: AFTER: type change to string
 
   dynamic_var = false;
-  print("AFTER: $dynamic_var");
+  print("AFTER: $dynamic_var");   // Output: AFTER: false
 
 
-  print(int_var.isEven);
+  print(int_var.isEven);    // Output: true
 
   // USE of $ in print or accessing variables in print or any strings
   print("int_var: $int_var");   // Output: int_var: 30

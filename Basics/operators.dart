@@ -86,8 +86,8 @@ void main() {
   print("##__Type Test Operators__##");
   dynamic obj = "Hello";
   print("Typecast: ${obj as String}");
-  print("is String: ${obj is int}");
-  print("is! int: ${obj is! String}");
+  print("is int: ${obj is int}");
+  print("is! String: ${obj is! String}");
 
   print("---------------------------------------------------------------------");
 
@@ -95,16 +95,17 @@ void main() {
   print("##_Assignment Operators_##");
   int? c;
   print("Null-aware assignment: ${c ??= 5}");
-  print("Addition assignment: ${c +=3}");
-  print("Subtraction assignment: ${ c -= 2}");
-  print("Multiplication assignment: ${ c *= 2}");  
-  print("Integer Division assignment: ${c ~/= 2}");
+  print("Addition assignment(c+=3): ${c +=3}");
+  print("Subtraction assignment(c-=2): ${ c -= 2}");
+  print("Multiplication assignment(c*=2): ${ c *= 2}");  
+  print("Integer Division assignment(c~/=2): ${c ~/= 2}");
 
   print("---------------------------------------------------------------------");
 
   // 5. Logical Operators
   print("##_Logical Operators_##");
   bool x = true, y = false;
+  print("x= $x, y= $y");
   print("NOT: ${!x}");
   print("OR: ${x || y}");
   print("AND: ${x && y}");
@@ -113,7 +114,7 @@ void main() {
 
   // 6. Bitwise or Shift Operators
   print("##__Bitwise or Shift Operators__##");
-  int d = 2; // 10 in binary
+  int d = 2; // 10 in binary    // a = 10 (1010 in binary), b = 3 (011)
   print("Bitwise AND: ${a & b}");
   print("Bitwise OR: ${a | b}");
   print("Bitwise XOR: ${a ^ b}");
@@ -165,17 +166,18 @@ Greater than or Equal: true
 ---------------------------------------------------------------------
 ##__Type Test Operators__##
 Typecast: Hello
-is String: false
-is! int: false
+is int: false
+is! String: false
 ---------------------------------------------------------------------
 ##_Assignment Operators_##
 Null-aware assignment: 5
-Addition assignment: 8
-Subtraction assignment: 6
-Multiplication assignment: 12
-Integer Division assignment: 6
+Addition assignment(c+=3): 8
+Subtraction assignment(c-=2): 6
+Multiplication assignment(c*=2): 12
+Integer Division assignment(c~/=2): 6
 ---------------------------------------------------------------------
 ##_Logical Operators_##
+x= true, y= false
 NOT: false
 OR: true
 AND: false
