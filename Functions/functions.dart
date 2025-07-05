@@ -64,7 +64,7 @@ void main(List<String> args) {
     print("another anonymous function");
   }();
 
-  ();   // this does nothing like run empty funtion according to me ( this was my experiment and doesn't gave error with FLutter 3.27.1 )
+  ();   // this does nothing like run empty funtion according to me ( this was my experiment and doesn't gave error with dart v3.6.0 )
 
   print("--------------------------------------------------------------");
 
