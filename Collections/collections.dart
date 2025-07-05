@@ -89,7 +89,7 @@ void main(List<String> args) {
 
   Set<String> s3 = {"hello", "hii"};
   print(s3);    // {hello, hii}
-  print(s2.runtimeType);    // _Set<int>
+  print(s3.runtimeType);    // _Set<String>
 
 
 
